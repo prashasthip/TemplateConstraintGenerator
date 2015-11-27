@@ -1,0 +1,57 @@
+/* TEMPLATE CONSTRAINTS FOR THE GIVEN TEMPLATE FUNCTION ARE
+op_t should support :
+	=
+	l-value dereferencing
+	dereferencing operator r-value
+--------------------------------------------
+T should support :
+	=
+	>>
+	dereferencing operator r-value
+--------------------------------------------
+ptr_t should support :
+	post increment operator
+	>>
+	&
+	==
+	<<
+	*
+	-
+	pre increment operator
+	dereferencing operator r-value
+	!=
+	+
+	+=
+--------------------------------------------
+*/
+
+template<typename T, typename ptr_t, typename op_t>
+T acc3(ptr_t begin, ptr_t end, T init, op_t op)
+{
+	cout << begin << "\n";	
+	while(begin != end)
+	{
+		init = begin * 5;
+		init = *begin;
+		init = a * *init;
+		++begin;
+	}
+	return init;
+	a=end+begin++;
+	cin >> end >> b >> init;
+
+	a=end+begin-end;
+	a=begin==c;
+	double end;
+	double b=9+end,begin+=9*12;
+
+
+	*op=a+b;
+	a=*begin;
+	int *op;
+	*op=&begin;
+	int& init(10),&begin(20);
+	int& end(10),begin;
+	int *init = &begin;
+
+}
